@@ -100,7 +100,7 @@
                 <figure><img src="https://labi.agency/wp-content/themes/labi-agency-theme/assets/img/logo-colored.svg" alt="Labi"></figure>
             </div>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#">Главная</a></li>
+                <li class="nav-item"><a href="{% url 'home:index' %}">Главная</a></li>
                 <li class="nav-item">
                     <a href="#">Услуги</a>
                     <ul>
@@ -112,7 +112,7 @@
                     </ul>
                 </li>
                 <li class="nav-item"><a href="#">Заказать</a></li>
-                <li class="nav-item"><a href="#">Контакты</a></li>
+                <li class="nav-item"><a href="{% url 'home:contact' %}">Контакты</a></li>
             </ul>
         </div>
     </div>
