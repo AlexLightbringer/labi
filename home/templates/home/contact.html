@@ -1,7 +1,26 @@
 {% extends "home/base.html" %}
 
 {% block content %}
-
-    <div>Test</div>
-
+<style>
+    .wrap{
+        width: 850px;
+        padding: 20px;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    .contact{
+        font-family: "Lato", serif;
+        font-size: 18px;
+    }
+</style>
+    <div class="wrap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2005.2075810510137!2d30.50977147714533!3d59.82908337486018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469628ab904412dd%3A0xb68c323a7f73764d!2z0JrQsNGA0LDQstCw0LXQstGB0LrQsNGPINGD0LsuLCAzMyDQutC-0YDQv9GD0YEgNSwgMTQsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MjE3Nw!5e0!3m2!1sru!2suk!4v1694362438599!5m2!1sru!2suk" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p class="contact">
+            +7 921 366 04 32<br>
+            welcome@labi.agency<br>
+            г. Санкт-Петербург, Караваевская, 33
+        </p>
+    </div>
 {% endblock content %}
