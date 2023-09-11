@@ -36,3 +36,6 @@ def order(request):
 
 def order_complete(request):
     return render(request, "home/order_complete.html")
+
+def services(request):
+    return render(request, "home/services.html")
