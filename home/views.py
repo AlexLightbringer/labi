@@ -39,3 +39,15 @@ def order_complete(request):
 
 def services(request):
     return render(request, "home/services.html")
+
+def labi_print(request):
+    return render(request, "home/print.html")
+
+def labi_expo(request):
+    return render(request, "home/expo.html")
+
+def labi_design(request):
+    return render(request, "home/design.html")
+
+def labi_branding(request):
+    return render(request, "home/branding.html")
