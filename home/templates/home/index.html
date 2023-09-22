@@ -284,7 +284,7 @@
             <p>И ещё это можно перевести, как удачный. Именно такой выбор
 вы сделаете, начав сотрудничество с LABI agency.</p>
             <div class="about-link">
-                <a href="">Сделать заказ</a>
+                <a href="{% url 'home:order' %}">Сделать заказ</a>
             </div>
         </div>
         <form method="post" action="{% url 'home:job' %}" class="form">
@@ -305,22 +305,22 @@
         <div class="work-example">
             <h3>ВЫСТАВКИ</h3>
             <img src="https://labi.agency/wp-content/uploads/2021/12/img_3469-scaled.jpg" alt="выставки">
-            <a class="order-button" href="#">Заказать</a>
+            <a class="order-button" href="{% url 'home:order' %}">Заказать</a>
         </div>
         <div class="work-example">
             <h3>ТИПОГРАФИЯ</h3>
             <img src="https://labi.agency/wp-content/uploads/2021/11/screenshot_4.jpg" alt="типография">
-            <a class="order-button" href="#">Заказать</a>
+            <a class="order-button" href="{% url 'home:order' %}">Заказать</a>
         </div>
         <div class="work-example">
             <h3>ПРОИЗВОДСТВО</h3>
             <img src="https://labi.agency/wp-content/uploads/2021/12/img_20211206_212140-scaled.jpg" alt="производство">
-            <a class="order-button" href="#">Заказать</a>
+            <a class="order-button" href="{% url 'home:order' %}">Заказать</a>
         </div>
         <div class="work-example">
             <h3>ДИЗАЙН</h3>
             <img src="https://labi.agency/wp-content/uploads/2021/12/img-20211119-wa0010.jpg" alt="дизайн">
-            <a class="order-button" href="#">Заказать</a>
+            <a class="order-button" href="{% url 'home:order' %}">Заказать</a>
         </div>
     </div>
 

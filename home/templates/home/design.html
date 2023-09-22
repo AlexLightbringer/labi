@@ -1,4 +1,70 @@
 {% extends "home/base.html" %}
 
 {% block content %}
+<style>
+        .work-examples {
+            margin-top: 10%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1%;
+            justify-content: center;
+        }
+
+        .work-example {
+            width: 500px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 10px;
+        }
+
+        .work-example img {
+            max-width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .order-button {
+            background-color: #0c265d;
+            color: #fff;
+            padding: 5px 10px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .order-button:hover{
+            background-color: #8a0e0d;
+        }
+    </style>
+    <div class="work-examples">
+        <div class="work-example">
+            <img src="https://sun27-2.userapi.com/impg/47nw2nVVKZ498T5zL4KJVDLkd9zuGdB6evWPaw/roDBpb1n5kU.jpg?size=1200x360&quality=96&sign=11ef74745685e51a4e14a63e613d634b" alt="пример">
+            <a class="order-button" href="{% url 'home:order' %}">Заказать</a>
+        </div>
+        <div class="work-example">
+            <img src="https://sun27-1.userapi.com/impg/s6BGFpZ-UjZJ2fYqWMRJQXQ-nrI2H0VtZzFEqA/df6lt5W_8Vk.jpg?size=1000x662&quality=96&sign=df849993e7e96fd5073995b4a8ddbb3f" alt="пример">
+            <a class="order-button" href="{% url 'home:order' %}">Заказать</a>
+        </div>
+        <div class="work-example">
+            <img src="https://sun9-9.userapi.com/impg/GLnZ1xFQrzqYyqyxnynwAMjZSvT4WIAWLhT9EQ/_S8AOa6dgIs.jpg?size=1262x710&quality=96&sign=6b2569af161d05e57cc759c83fae1a4d" alt="пример">
+            <a class="order-button" href="{% url 'home:order' %}">Заказать</a>
+        </div>
+        <div class="work-example">
+            <img src="https://sun9-3.userapi.com/impg/Z4zDG9ocm-ODgwAqo6V9ZEtzfoHldbGaCKOl5A/FUtLjvLmohU.jpg?size=1500x902&quality=96&sign=a49a32e90b899e66dbaa12ee77d01108" alt="пример">
+            <a class="order-button" href="{% url 'home:order' %}">Заказать</a>
+        </div>
+        <div class="work-example">
+            <img src="https://sun9-50.userapi.com/impg/gT6YrC-ZcT7CCLUNVgmOWmMv1qlKgLEC1KHunw/dFvcbfr2aNY.jpg?size=1152x768&quality=96&sign=7f784a0d0b0ad79c7a9e79ac3a2fb709" alt="пример">
+            <a class="order-button" href="{% url 'home:order' %}">Заказать</a>
+        </div>
+        <div class="work-example">
+            <img src="https://sun9-50.userapi.com/impg/Ishemef-xNCXsKknETxB58ujzIHfIvA2dnHiRQ/3DKJL_ICuso.jpg?size=1000x628&quality=96&sign=97b1aa43effffc137bfcda3e43209c52" alt="пример">
+            <a class="order-button" href="{% url 'home:order' %}">Заказать</a>
+        </div>
+        <div class="work-example">
+            <img src="https://sun9-47.userapi.com/impg/xqCRTNBciTkMhx66n9nBNLxKolg0JCrq-7z6VQ/EBeS1LuaDuc.jpg?size=800x600&quality=96&sign=b80cf98edfc4b4b39098aa0e963abbc5" alt="пример">
+            <a class="order-button" href="{% url 'home:order' %}">Заказать</a>
+        </div>
+    </div>
 {% endblock content %}

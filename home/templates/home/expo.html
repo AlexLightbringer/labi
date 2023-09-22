@@ -1,4 +1,82 @@
 {% extends "home/base.html" %}
 
 {% block content %}
+<style>
+        .work-examples {
+            margin-top: 10%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1%;
+            justify-content: center;
+        }
+
+        .work-example {
+            width: 400px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 10px;
+        }
+
+        .work-example img {
+            max-width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .order-button {
+            background-color: #0c265d;
+            color: #fff;
+            padding: 5px 10px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .order-button:hover{
+            background-color: #8a0e0d;
+        }
+    </style>
+    <div class="work-examples">
+        <div class="work-example">
+            <img src="https://sun9-42.userapi.com/impg/IP2N__lPLDHKHu0r8mKDl-N2oLguxC8f4fO8Nw/wgcwJL4O4u0.jpg?size=1024x768&quality=96&sign=7138f057bc95984d5aee3564a28a1bf4" alt="пример">
+            <a class="order-button" href="{% url 'home:order' %}">Заказать</a>
+        </div>
+        <div class="work-example">
+            <img src="https://sun9-7.userapi.com/impg/HlgFHNhx7NPXM4xSl15CL67Ze6n6-KVmdaZR4Q/pOLjtRQL7NY.jpg?size=800x600&quality=96&sign=5c16860965de88be6f7905da356bcfb5" alt="пример">
+            <a class="order-button" href="{% url 'home:order' %}">Заказать</a>
+        </div>
+        <div class="work-example">
+            <img src="https://sun9-15.userapi.com/impg/zwkh6IFgV0w_1T96bjMgJXy4YfO7K2Dk5AxoUA/4NiVd4ibTDs.jpg?size=700x394&quality=96&sign=57afe6e50c590bb36115b77fc5f8d563" alt="пример">
+            <a class="order-button" href="{% url 'home:order' %}">Заказать</a>
+        </div>
+        <div class="work-example">
+            <img src="https://sun9-22.userapi.com/impg/Lze9Lk48OadIPyml1Jo9er90r28g5_PnMzakwA/QvT_t_AQ3DU.jpg?size=800x800&quality=96&sign=dd0679ed5536861347bffa61adc1bbbb" alt="пример">
+            <a class="order-button" href="{% url 'home:order' %}">Заказать</a>
+        </div>
+        <div class="work-example">
+            <img src="https://sun9-58.userapi.com/impg/JBKgrsNVWmblXOPft1LmTtQFyXphzbJWrvA1vA/JVVGtwsuJPU.jpg?size=750x375&quality=96&sign=4e767c4668fbc54a90768b21629a473b" alt="пример">
+            <a class="order-button" href="{% url 'home:order' %}">Заказать</a>
+        </div>
+        <div class="work-example">
+            <img src="https://sun9-19.userapi.com/impg/lo1dCxZApnXjLHFNVMOABEGEZyryv0vTGFjEcg/DX4zHFyKj1U.jpg?size=660x452&quality=96&sign=6e5a492224cb6cf0cfd3e72ae7ce8a78" alt="пример">
+            <a class="order-button" href="{% url 'home:order' %}">Заказать</a>
+        </div>
+        <div class="work-example">
+            <img src="https://sun9-76.userapi.com/impg/mIg2ZUeQkcd4W21zzhaprrHnW7KajGoY1LGw0g/vLmN9UyYSf0.jpg?size=640x518&quality=96&sign=a41c82a253b14e4e1c39a3165c93020c" alt="пример">
+            <a class="order-button" href="{% url 'home:order' %}">Заказать</a>
+        </div>
+        <div class="work-example">
+            <img src="https://sun9-14.userapi.com/impg/e_kvS-cGbpQmE83Rl89UaR1cKn0vCN87mzXENg/c-fSfTBCsL4.jpg?size=600x450&quality=96&sign=d456eabc8b64caf06e145ac1913a022c" alt="пример">
+            <a class="order-button" href="{% url 'home:order' %}">Заказать</a>
+        </div>
+        <div class="work-example">
+            <img src="https://sun9-19.userapi.com/impg/p74gi-cwsvU7DxuZ5VcfsRlmlZHbhkFlEU2Zuw/VhdKRkaPCHg.jpg?size=800x600&quality=96&sign=22b25549432910e0d0b173b744c5ecf0" alt="пример">
+            <a class="order-button" href="{% url 'home:order' %}">Заказать</a>
+        </div>
+        <div class="work-example">
+            <img src="https://sun9-38.userapi.com/impg/FkKlq-dNnKg3QRgNRCeBTX6Ys-GUpyLJQbCmCw/inzWQUtg7kQ.jpg?size=1280x960&quality=96&sign=87c31d594cc1d27a9d794cce5d7fa7cc" alt="пример">
+            <a class="order-button" href="{% url 'home:order' %}">Заказать</a>
+        </div>
+    </div>
 {% endblock content %}
