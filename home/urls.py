@@ -1,18 +1,18 @@
 from django.urls import path
-from .views import home, contact, job, order, order_complete, services, labi_print, labi_design, labi_expo, labi_branding
-
+from .views import HomeView, JobView, ContactView, OrderView, OrderCompleteView
+from .views import ServicesView, LabiExpoView, LabiBrandingView, LabiPrintView, LabiDesignView
 
 app_name = "home"
 
 urlpatterns = [
-    path('', home, name="index"),
-    path('contact', contact, name="contact"),
-    path('job', job, name="job"),
-    path('order', order, name="order"),
-    path('order_complete', order_complete, name="order_complete"),
-    path('services', services, name="services"),
-    path('labi_print', labi_print, name="labi_print"),
-    path('labi_design', labi_design, name="labi_design"),
-    path('labi_expo', labi_expo, name="labi_expo"),
-    path('labi_branding', labi_branding, name="labi_branding"),
+    path('', HomeView.as_view(), name="index"),
+    path('contact', ContactView.as_view(), name="contact"),
+    path('job', JobView.as_view(), name="job"),
+    path('order', OrderView.as_view(), name="order"),
+    path('order_complete', OrderCompleteView.as_view(), name="order_complete"),
+    path('services', ServicesView.as_view(), name="services"),
+    path('labi_print', LabiExpoView.as_view(), name="labi_print"),
+    path('labi_design', LabiDesignView.as_view(), name="labi_design"),
+    path('labi_expo', LabiExpoView.as_view(), name="labi_expo"),
+    path('labi_branding', LabiBrandingView.as_view(), name="labi_branding"),
 ]
