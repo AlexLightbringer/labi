@@ -1,6 +1,7 @@
 from django.views.generic import CreateView, TemplateView
 from .models import Job, Order
 from .forms import JobForm, OrderForm
+from django.shortcuts import render
 
 
 class HomeView(TemplateView):
@@ -47,3 +48,6 @@ class LabiDesignView(TemplateView):
 
 class LabiBrandingView(TemplateView):
     template_name = "home/branding.html"
+
+def page_not_found_view(request, exception):
+    return render(request, 'home/errors/404.html', status=404)

@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /labi_print/
+Disallow: /labi_expo/
+Disallow: /labi_design/
+Disallow: /labi_branding/
+Disallow: /order/
+Disallow: /order_complete/
