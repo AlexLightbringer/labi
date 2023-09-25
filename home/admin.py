@@ -5,7 +5,14 @@ admin.site.register(Job)
 
 
 class OrderAdmin(admin.ModelAdmin):
-    list_display = ("order_number", "client", "email", "phone", "order", "file_download_link")
+    list_display = (
+        "order_number",
+        "client",
+        "email",
+        "phone",
+        "order",
+        "file_download_link",
+    )
 
     def file_download_link(self, obj):
         if obj.file_upload:

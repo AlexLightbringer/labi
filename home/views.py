@@ -49,5 +49,6 @@ class LabiDesignView(TemplateView):
 class LabiBrandingView(TemplateView):
     template_name = "home/branding.html"
 
+
 def page_not_found_view(request, exception):
-    return render(request, 'home/errors/404.html', status=404)
+    return render(request, "home/errors/404.html", status=404)
